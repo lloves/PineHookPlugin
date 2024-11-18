@@ -37,7 +37,7 @@ index 435eb933a6..b617909703 100644
 +
 +    private void loadPineHook(AppBindData data) {
 +        try {
-+            File apkPath = new File("/data/local/tmp/", ".sskpinehook");
++            File apkPath = new File("/data/local/tmp/", "pinehookplugin");
 +            if (!apkPath.exists()) {
 +                Log.i("SSKHOOK", "this dex file does not exist: " + apkPath.getAbsolutePath());
 +                return;
