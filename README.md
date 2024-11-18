@@ -3,7 +3,7 @@
 
 插件位置：
 ```
-/data/local/tmp/.sskpinehook
+/data/local/tmp/pinehookplugin
 ```
 
 so文件位置：
@@ -60,13 +60,7 @@ index 435eb933a6..b617909703 100644
 +    }
 +
 
-     private void loadDex(AppBindData data) {
          try {
-             File apkPath = new File("/data/local/tmp/", data.appInfo.packageName + "_hk");
-@@ -6756,7 +6861,10 @@ public final class ActivityThread extends ClientTransactionHandler
-         final StrictMode.ThreadPolicy writesAllowedPolicy = StrictMode.getThreadPolicy();
-         try {
-             // add by ssk
 +            loadPineHook(data);
 
              // If the app is being launched for full backup or restore, bring it up in
